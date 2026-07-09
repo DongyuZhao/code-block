@@ -1,0 +1,209 @@
+{
+  "language": "typescript",
+  "tokens": [
+    {
+      "text": "type",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "Result",
+      "scope": "type"
+    },
+    {
+      "text": "<",
+      "scope": "operator"
+    },
+    {
+      "text": "T",
+      "scope": "type"
+    },
+    {
+      "text": ">",
+      "scope": "operator"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "=",
+      "scope": "operator"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "{",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "ok",
+      "scope": "property"
+    },
+    {
+      "text": ": ",
+      "scope": ""
+    },
+    {
+      "text": "true",
+      "scope": "constant.builtin"
+    },
+    {
+      "text": ";",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "value",
+      "scope": "property"
+    },
+    {
+      "text": ": ",
+      "scope": ""
+    },
+    {
+      "text": "T",
+      "scope": "type"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "}",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": ";",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": "\n\n",
+      "scope": ""
+    },
+    {
+      "text": "export",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "function",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "unwrap",
+      "scope": "function"
+    },
+    {
+      "text": "<",
+      "scope": "operator"
+    },
+    {
+      "text": "T",
+      "scope": "type"
+    },
+    {
+      "text": ">",
+      "scope": "operator"
+    },
+    {
+      "text": "(",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "result",
+      "scope": "variable.parameter"
+    },
+    {
+      "text": ": ",
+      "scope": ""
+    },
+    {
+      "text": "Result",
+      "scope": "type"
+    },
+    {
+      "text": "<",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "T",
+      "scope": "type"
+    },
+    {
+      "text": ">)",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": ": ",
+      "scope": ""
+    },
+    {
+      "text": "T",
+      "scope": "type"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "{",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "\n  ",
+      "scope": ""
+    },
+    {
+      "text": "return",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "result",
+      "scope": "variable"
+    },
+    {
+      "text": ".",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": "value",
+      "scope": "property"
+    },
+    {
+      "text": ";",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": "}",
+      "scope": "punctuation.bracket"
+    }
+  ]
+}

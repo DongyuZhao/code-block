@@ -20,10 +20,16 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import io.github.dongyuzhao.composecodeblock.Action
+import io.github.dongyuzhao.composecodeblock.Actions
 import io.github.dongyuzhao.composecodeblock.CodeBlock
-import io.github.dongyuzhao.composecodeblock.CodeRenderOptions
+import io.github.dongyuzhao.composecodeblock.Lines
+import io.github.dongyuzhao.composecodeblock.Mode
+import io.github.dongyuzhao.composecodeblock.Palette
+import io.github.dongyuzhao.composecodeblock.Theme
 
 private data class SampleSnippet(
     val title: String,
@@ -40,7 +46,7 @@ private val snippets = listOf(
             fun PreviewPane() {
                 CodeBlock(
                     code = "val answer = 42",
-                    options = CodeRenderOptions(language = "kotlin")
+                    language = "kotlin"
                 )
             }
         """.trimIndent()
@@ -65,13 +71,46 @@ private val snippets = listOf(
         code = """
             type TokenRun = {
               text: string;
-              types: string[];
+              scope: string;
             };
 
             export function describe(run: TokenRun) {
-              return run.types.join(".") + ": " + run.text;
+              return run.scope + ": " + run.text;
             }
         """.trimIndent()
+    )
+)
+
+private val theme = Theme(
+    light = Palette(
+        base = Color(0xFFF8FAFC),
+        text = Color(0xFF172033),
+        muted = Color(0xFF64748B),
+        border = Color(0xFFD8E0EA),
+        tokens = mapOf(
+            "plain" to Color(0xFF172033),
+            "comment" to Color(0xFF64748B),
+            "keyword" to Color(0xFFB4235A),
+            "string" to Color(0xFF005C45),
+            "number" to Color(0xFF0057B8),
+            "function" to Color(0xFF6D3FC0),
+            "type" to Color(0xFF8A4B08)
+        )
+    ),
+    dark = Palette(
+        base = Color(0xFF151922),
+        text = Color(0xFFE6EAF2),
+        muted = Color(0xFF9AA6B8),
+        border = Color(0xFF303846),
+        tokens = mapOf(
+            "plain" to Color(0xFFE6EAF2),
+            "comment" to Color(0xFF8FA4BF),
+            "keyword" to Color(0xFFFF7AAA),
+            "string" to Color(0xFF6FD7B0),
+            "number" to Color(0xFF7DB7FF),
+            "function" to Color(0xFFC5A3FF),
+            "type" to Color(0xFFFFB86B)
+        )
     )
 )
 
@@ -104,7 +143,7 @@ private fun CodeBlockSampleScreen() {
             fontWeight = FontWeight.SemiBold
         )
         Text(
-            text = "Compose renders the shared Prism token stream as a native AnnotatedString.",
+            text = "Compose renders the shared tree-sitter token stream as a native AnnotatedString.",
             color = MaterialTheme.colorScheme.onSurfaceVariant
         )
 
@@ -119,8 +158,18 @@ private fun CodeBlockSampleScreen() {
         CodeBlock(
             code = selected.code,
             modifier = Modifier.fillMaxWidth(),
-            options = CodeRenderOptions(language = selected.language)
+            language = selected.language,
+            mode = Mode.Automatic,
+            theme = theme,
+            lines = Lines(show = true),
+            actions = Actions(
+                extensions = listOf(
+                    Action(id = "next", label = "Next") {
+                        val index = snippets.indexOf(selected)
+                        selected = snippets[(index + 1) % snippets.size]
+                    }
+                )
+            )
         )
     }
 }
-

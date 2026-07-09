@@ -1,0 +1,634 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`highlightCode > matches token snapshots for common languages 1`] = `
+[
+  {
+    "requestedLanguage": "bash",
+    "result": {
+      "language": "bash",
+      "tokens": [
+        {
+          "scope": "comment",
+          "text": "#!/usr/bin/env bash",
+        },
+        {
+          "scope": "",
+          "text": "
+",
+        },
+        {
+          "scope": "property",
+          "text": "name",
+        },
+        {
+          "scope": "",
+          "text": "=",
+        },
+        {
+          "scope": "string",
+          "text": ""world"",
+        },
+        {
+          "scope": "",
+          "text": "
+",
+        },
+        {
+          "scope": "function",
+          "text": "echo",
+        },
+        {
+          "scope": "",
+          "text": " ",
+        },
+        {
+          "scope": "string",
+          "text": ""Hello, ",
+        },
+        {
+          "scope": "markup.embedded",
+          "text": "\${",
+        },
+        {
+          "scope": "property",
+          "text": "name",
+        },
+        {
+          "scope": "markup.embedded",
+          "text": "}",
+        },
+        {
+          "scope": "string",
+          "text": """,
+        },
+      ],
+    },
+  },
+  {
+    "requestedLanguage": "c",
+    "result": {
+      "language": "c",
+      "tokens": [
+        {
+          "scope": "keyword",
+          "text": "#include",
+        },
+        {
+          "scope": "",
+          "text": " ",
+        },
+        {
+          "scope": "string",
+          "text": "<stdio.h>",
+        },
+        {
+          "scope": "",
+          "text": "
+",
+        },
+        {
+          "scope": "type",
+          "text": "int",
+        },
+        {
+          "scope": "",
+          "text": " ",
+        },
+        {
+          "scope": "function",
+          "text": "main",
+        },
+        {
+          "scope": "",
+          "text": "(",
+        },
+        {
+          "scope": "type",
+          "text": "void",
+        },
+        {
+          "scope": "",
+          "text": ") { ",
+        },
+        {
+          "scope": "keyword",
+          "text": "return",
+        },
+        {
+          "scope": "",
+          "text": " ",
+        },
+        {
+          "scope": "number",
+          "text": "0",
+        },
+        {
+          "scope": "punctuation.delimiter",
+          "text": ";",
+        },
+        {
+          "scope": "",
+          "text": " }",
+        },
+      ],
+    },
+  },
+  {
+    "requestedLanguage": "css",
+    "result": {
+      "language": "css",
+      "tokens": [
+        {
+          "scope": "",
+          "text": ".",
+        },
+        {
+          "scope": "property",
+          "text": "button",
+        },
+        {
+          "scope": "",
+          "text": " { ",
+        },
+        {
+          "scope": "property",
+          "text": "color",
+        },
+        {
+          "scope": "punctuation.delimiter",
+          "text": ":",
+        },
+        {
+          "scope": "",
+          "text": " ",
+        },
+        {
+          "scope": "punctuation.delimiter",
+          "text": "#",
+        },
+        {
+          "scope": "string.special",
+          "text": "0a7",
+        },
+        {
+          "scope": "",
+          "text": "; ",
+        },
+        {
+          "scope": "property",
+          "text": "display",
+        },
+        {
+          "scope": "punctuation.delimiter",
+          "text": ":",
+        },
+        {
+          "scope": "",
+          "text": " grid; }",
+        },
+      ],
+    },
+  },
+  {
+    "requestedLanguage": "go",
+    "result": {
+      "language": "go",
+      "tokens": [
+        {
+          "scope": "keyword",
+          "text": "package",
+        },
+        {
+          "scope": "",
+          "text": " main
+",
+        },
+        {
+          "scope": "keyword",
+          "text": "func",
+        },
+        {
+          "scope": "",
+          "text": " ",
+        },
+        {
+          "scope": "variable",
+          "text": "greet",
+        },
+        {
+          "scope": "",
+          "text": "(",
+        },
+        {
+          "scope": "variable",
+          "text": "name",
+        },
+        {
+          "scope": "",
+          "text": " ",
+        },
+        {
+          "scope": "type",
+          "text": "string",
+        },
+        {
+          "scope": "",
+          "text": ") ",
+        },
+        {
+          "scope": "type",
+          "text": "string",
+        },
+        {
+          "scope": "",
+          "text": " { ",
+        },
+        {
+          "scope": "keyword",
+          "text": "return",
+        },
+        {
+          "scope": "",
+          "text": " ",
+        },
+        {
+          "scope": "string",
+          "text": ""Hello, "",
+        },
+        {
+          "scope": "",
+          "text": " ",
+        },
+        {
+          "scope": "operator",
+          "text": "+",
+        },
+        {
+          "scope": "",
+          "text": " ",
+        },
+        {
+          "scope": "variable",
+          "text": "name",
+        },
+        {
+          "scope": "",
+          "text": " }",
+        },
+      ],
+    },
+  },
+  {
+    "requestedLanguage": "html",
+    "result": {
+      "language": "html",
+      "tokens": [
+        {
+          "scope": "punctuation.bracket",
+          "text": "<",
+        },
+        {
+          "scope": "tag",
+          "text": "main",
+        },
+        {
+          "scope": "",
+          "text": " ",
+        },
+        {
+          "scope": "attribute",
+          "text": "class",
+        },
+        {
+          "scope": "",
+          "text": "="",
+        },
+        {
+          "scope": "string",
+          "text": "app",
+        },
+        {
+          "scope": "",
+          "text": """,
+        },
+        {
+          "scope": "punctuation.bracket",
+          "text": "><",
+        },
+        {
+          "scope": "tag",
+          "text": "h1",
+        },
+        {
+          "scope": "punctuation.bracket",
+          "text": ">",
+        },
+        {
+          "scope": "",
+          "text": "Hello",
+        },
+        {
+          "scope": "punctuation.bracket",
+          "text": "</",
+        },
+        {
+          "scope": "tag",
+          "text": "h1",
+        },
+        {
+          "scope": "punctuation.bracket",
+          "text": "></",
+        },
+        {
+          "scope": "tag",
+          "text": "main",
+        },
+        {
+          "scope": "punctuation.bracket",
+          "text": ">",
+        },
+      ],
+    },
+  },
+  {
+    "requestedLanguage": "java",
+    "result": {
+      "language": "java",
+      "tokens": [
+        {
+          "scope": "keyword",
+          "text": "record",
+        },
+        {
+          "scope": "",
+          "text": " ",
+        },
+        {
+          "scope": "variable",
+          "text": "User",
+        },
+        {
+          "scope": "",
+          "text": "(",
+        },
+        {
+          "scope": "type",
+          "text": "String",
+        },
+        {
+          "scope": "",
+          "text": " ",
+        },
+        {
+          "scope": "variable",
+          "text": "name",
+        },
+        {
+          "scope": "",
+          "text": ") {}",
+        },
+      ],
+    },
+  },
+  {
+    "requestedLanguage": "json",
+    "result": {
+      "language": "json",
+      "tokens": [
+        {
+          "scope": "",
+          "text": "{",
+        },
+        {
+          "scope": "string",
+          "text": ""name"",
+        },
+        {
+          "scope": "",
+          "text": ":",
+        },
+        {
+          "scope": "string",
+          "text": ""code-block"",
+        },
+        {
+          "scope": "",
+          "text": ",",
+        },
+        {
+          "scope": "string",
+          "text": ""enabled"",
+        },
+        {
+          "scope": "",
+          "text": ":",
+        },
+        {
+          "scope": "constant.builtin",
+          "text": "true",
+        },
+        {
+          "scope": "",
+          "text": "}",
+        },
+      ],
+    },
+  },
+  {
+    "requestedLanguage": "markdown",
+    "result": {
+      "language": "markdown",
+      "tokens": [
+        {
+          "scope": "punctuation.special",
+          "text": "#",
+        },
+        {
+          "scope": "markup.heading",
+          "text": " Hello
+",
+        },
+        {
+          "scope": "",
+          "text": "
+Use ",
+        },
+        {
+          "scope": "punctuation.delimiter",
+          "text": "**",
+        },
+        {
+          "scope": "markup.strong",
+          "text": "tree-sitter",
+        },
+        {
+          "scope": "punctuation.delimiter",
+          "text": "**",
+        },
+        {
+          "scope": "",
+          "text": ".",
+        },
+      ],
+    },
+  },
+  {
+    "requestedLanguage": "ruby",
+    "result": {
+      "language": "ruby",
+      "tokens": [
+        {
+          "scope": "keyword",
+          "text": "def",
+        },
+        {
+          "scope": "",
+          "text": " ",
+        },
+        {
+          "scope": "function.method",
+          "text": "greet",
+        },
+        {
+          "scope": "punctuation.bracket",
+          "text": "(",
+        },
+        {
+          "scope": "variable.parameter",
+          "text": "name",
+        },
+        {
+          "scope": "punctuation.bracket",
+          "text": ")",
+        },
+        {
+          "scope": "",
+          "text": "
+  ",
+        },
+        {
+          "scope": "string",
+          "text": ""Hello, ",
+        },
+        {
+          "scope": "punctuation.special",
+          "text": "#{",
+        },
+        {
+          "scope": "function.method",
+          "text": "name",
+        },
+        {
+          "scope": "punctuation.bracket",
+          "text": "}",
+        },
+        {
+          "scope": "string",
+          "text": """,
+        },
+        {
+          "scope": "",
+          "text": "
+",
+        },
+        {
+          "scope": "keyword",
+          "text": "end",
+        },
+      ],
+    },
+  },
+  {
+    "requestedLanguage": "rust",
+    "result": {
+      "language": "rust",
+      "tokens": [
+        {
+          "scope": "keyword",
+          "text": "fn",
+        },
+        {
+          "scope": "",
+          "text": " ",
+        },
+        {
+          "scope": "function",
+          "text": "greet",
+        },
+        {
+          "scope": "punctuation.bracket",
+          "text": "(",
+        },
+        {
+          "scope": "variable.parameter",
+          "text": "name",
+        },
+        {
+          "scope": "punctuation.delimiter",
+          "text": ":",
+        },
+        {
+          "scope": "",
+          "text": " ",
+        },
+        {
+          "scope": "operator",
+          "text": "&",
+        },
+        {
+          "scope": "type.builtin",
+          "text": "str",
+        },
+        {
+          "scope": "punctuation.bracket",
+          "text": ")",
+        },
+        {
+          "scope": "",
+          "text": " -> ",
+        },
+        {
+          "scope": "type",
+          "text": "String",
+        },
+        {
+          "scope": "",
+          "text": " ",
+        },
+        {
+          "scope": "punctuation.bracket",
+          "text": "{",
+        },
+        {
+          "scope": "",
+          "text": " ",
+        },
+        {
+          "scope": "function.macro",
+          "text": "format!",
+        },
+        {
+          "scope": "punctuation.bracket",
+          "text": "(",
+        },
+        {
+          "scope": "string",
+          "text": ""Hello, {name}"",
+        },
+        {
+          "scope": "punctuation.bracket",
+          "text": ")",
+        },
+        {
+          "scope": "",
+          "text": " ",
+        },
+        {
+          "scope": "punctuation.bracket",
+          "text": "}",
+        },
+      ],
+    },
+  },
+]
+`;

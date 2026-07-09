@@ -1,0 +1,117 @@
+{
+  "language": "javascript",
+  "tokens": [
+    {
+      "text": "const",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "answer",
+      "scope": "variable"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "=",
+      "scope": "operator"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "42",
+      "scope": "number"
+    },
+    {
+      "text": ";",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": "function",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "greet",
+      "scope": "function"
+    },
+    {
+      "text": "(",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "name",
+      "scope": "variable.parameter"
+    },
+    {
+      "text": ")",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "{",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "\n  ",
+      "scope": ""
+    },
+    {
+      "text": "return",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "`hello, ",
+      "scope": "string"
+    },
+    {
+      "text": "${",
+      "scope": "punctuation.special"
+    },
+    {
+      "text": "name",
+      "scope": "variable"
+    },
+    {
+      "text": "}",
+      "scope": "punctuation.special"
+    },
+    {
+      "text": "`",
+      "scope": "string"
+    },
+    {
+      "text": ";",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": "}",
+      "scope": "punctuation.bracket"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "language": "java",
+  "tokens": [
+    {
+      "text": "record",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "User",
+      "scope": "variable"
+    },
+    {
+      "text": "(",
+      "scope": ""
+    },
+    {
+      "text": "String",
+      "scope": "type"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "name",
+      "scope": "variable"
+    },
+    {
+      "text": ") {\n  ",
+      "scope": ""
+    },
+    {
+      "text": "boolean",
+      "scope": "type.builtin"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "active",
+      "scope": "function.method"
+    },
+    {
+      "text": "() { ",
+      "scope": ""
+    },
+    {
+      "text": "return",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "true",
+      "scope": "constant.builtin"
+    },
+    {
+      "text": "; }\n}",
+      "scope": ""
+    }
+  ]
+}

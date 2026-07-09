@@ -1,0 +1,209 @@
+{
+  "language": "javascript",
+  "tokens": [
+    {
+      "text": "// Escapes keep their own color.",
+      "scope": "comment"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": "const",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "MAX_RETRIES",
+      "scope": "constructor"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "=",
+      "scope": "operator"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "3",
+      "scope": "number"
+    },
+    {
+      "text": ";",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": "const",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "message",
+      "scope": "variable"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "=",
+      "scope": "operator"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "\"line",
+      "scope": "string"
+    },
+    {
+      "text": "\\n",
+      "scope": "string.escape"
+    },
+    {
+      "text": "next\"",
+      "scope": "string"
+    },
+    {
+      "text": ";",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": "const",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "matcher",
+      "scope": "variable"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "=",
+      "scope": "operator"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "/",
+      "scope": "operator"
+    },
+    {
+      "text": "\\w+\\s+code",
+      "scope": "string.special"
+    },
+    {
+      "text": "/",
+      "scope": "operator"
+    },
+    {
+      "text": ";",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": "console",
+      "scope": "variable.builtin"
+    },
+    {
+      "text": ".",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": "log",
+      "scope": "function.method"
+    },
+    {
+      "text": "(",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "new",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "Widget",
+      "scope": "constructor"
+    },
+    {
+      "text": "(",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "message",
+      "scope": "variable"
+    },
+    {
+      "text": ")",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": ",",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "matcher",
+      "scope": "variable"
+    },
+    {
+      "text": ",",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "MAX_RETRIES",
+      "scope": "constructor"
+    },
+    {
+      "text": ")",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": ";",
+      "scope": "punctuation.delimiter"
+    }
+  ]
+}

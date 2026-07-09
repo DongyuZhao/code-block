@@ -1,0 +1,116 @@
+[
+    {
+        "id": "javascript-basic",
+        "language": "javascript",
+        "fontSize": 14,
+        "code": "const answer = 42;\nfunction greet(name) {\n  return `hello, ${name}`;\n}"
+    },
+    {
+        "id": "javascript-escapes",
+        "language": "javascript",
+        "fontSize": 14,
+        "code": "// Escapes keep their own color.\nconst MAX_RETRIES = 3;\nconst message = \"line\\nnext\";\nconst matcher = /\\w+\\s+code/;\nconsole.log(new Widget(message), matcher, MAX_RETRIES);"
+    },
+    {
+        "id": "jsx-element",
+        "language": "jsx",
+        "fontSize": 14,
+        "code": "const view = (\n  <section title=\"Status\">\n    Ready\n  </section>\n);"
+    },
+    {
+        "id": "typescript-generic",
+        "language": "typescript",
+        "fontSize": 14,
+        "code": "type Result<T> = { ok: true; value: T };\n\nexport function unwrap<T>(result: Result<T>): T {\n  return result.value;\n}"
+    },
+    {
+        "id": "tsx-component",
+        "language": "tsx",
+        "fontSize": 14,
+        "code": "type Props = { active: boolean };\nconst Badge = ({ active }: Props) => (\n  <strong>{active ? \"on\" : \"off\"}</strong>\n);"
+    },
+    {
+        "id": "python-escapes",
+        "language": "python",
+        "fontSize": 14,
+        "code": "class Greeter:\n    def message(self) -> str:\n        return \"line\\nnext\""
+    },
+    {
+        "id": "kotlin-compose",
+        "language": "kotlin",
+        "fontSize": 14,
+        "code": "@Composable\nfun Greeting(name: String) {\n    Text(\"Hello, $name\")\n}"
+    },
+    {
+        "id": "kotlin-scopes",
+        "language": "kotlin",
+        "fontSize": 14,
+        "code": "package demo\nfun scan(input: String): Boolean {\nloop@ for (ch in input) {\nif (ch == 'x') return Regex(\"\\\\d+\").matches(input)\n}}"
+    },
+    {
+        "id": "swift-literals",
+        "language": "swift",
+        "fontSize": 14,
+        "code": "let enabled = true\nlet matcher = /\\w+/\nvalues.forEach { value in\n    print(value)\n}"
+    },
+    {
+        "id": "bash-script",
+        "language": "bash",
+        "fontSize": 14,
+        "code": "#!/usr/bin/env bash\nname=\"world\"\necho \"Hello, ${name}\""
+    },
+    {
+        "id": "c-main",
+        "language": "c",
+        "fontSize": 14,
+        "code": "#include <stdio.h>\nint main(void) {\n  return 0;\n}"
+    },
+    {
+        "id": "css-rule",
+        "language": "css",
+        "fontSize": 14,
+        "code": ".button {\n  color: #0a7;\n  display: grid;\n}"
+    },
+    {
+        "id": "go-function",
+        "language": "go",
+        "fontSize": 14,
+        "code": "package main\nfunc greet(name string) string {\n  return \"Hello, \" + name\n}"
+    },
+    {
+        "id": "html-element",
+        "language": "html",
+        "fontSize": 14,
+        "code": "<main class=\"app\">\n  <h1>Hello</h1>\n</main>"
+    },
+    {
+        "id": "java-record",
+        "language": "java",
+        "fontSize": 14,
+        "code": "record User(String name) {\n  boolean active() { return true; }\n}"
+    },
+    {
+        "id": "json-config",
+        "language": "json",
+        "fontSize": 14,
+        "code": "{\n  \"name\": \"code-block\",\n  \"enabled\": true\n}"
+    },
+    {
+        "id": "markdown-document",
+        "language": "markdown",
+        "fontSize": 14,
+        "code": "# Hello\n\nUse *emphasis*, **strong**, and `code`.\nRead the [docs](https://example.com)."
+    },
+    {
+        "id": "ruby-method",
+        "language": "ruby",
+        "fontSize": 14,
+        "code": "def greet(name)\n  \"Hello, #{name}\"\nend"
+    },
+    {
+        "id": "rust-function",
+        "language": "rust",
+        "fontSize": 14,
+        "code": "fn greet(name: &str) -> String {\n  format!(\"Hello, {name}\")\n}"
+    }
+]

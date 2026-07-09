@@ -1,5 +1,5 @@
 packages:
-  - "packages/*"
-  - "samples/*"
+    - "packages/*"
+    - "samples/*"
 allowBuilds:
-  esbuild: true
+    esbuild: true

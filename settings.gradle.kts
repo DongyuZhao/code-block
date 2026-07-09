@@ -20,6 +20,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "code-block"
 
-include(":compose-code-block")
-project(":compose-code-block").projectDir = file("packages/compose-code-block")
+include(":packages:compose-code-block")
+project(":packages:compose-code-block").projectDir = file("packages/compose-code-block")
 
+include(":samples:compose-code-block-sample")
+project(":samples:compose-code-block-sample").projectDir = file("samples/compose-code-block-sample/app")

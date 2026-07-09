@@ -1,0 +1,65 @@
+{
+  "language": "c",
+  "tokens": [
+    {
+      "text": "#include",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "<stdio.h>",
+      "scope": "string"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": "int",
+      "scope": "type"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "main",
+      "scope": "function"
+    },
+    {
+      "text": "(",
+      "scope": ""
+    },
+    {
+      "text": "void",
+      "scope": "type"
+    },
+    {
+      "text": ") {\n  ",
+      "scope": ""
+    },
+    {
+      "text": "return",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "0",
+      "scope": "number"
+    },
+    {
+      "text": ";",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": "\n}",
+      "scope": ""
+    }
+  ]
+}

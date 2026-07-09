@@ -1,14 +1,13 @@
 package io.github.dongyuzhao.composecodeblock
 
-import kotlin.coroutines.resume
+import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.suspendCancellableCoroutine
 
-class CodeRenderer(private val bridge: PrismBridge) {
+class CodeRenderer(private val highlighter: CodeHighlighter) {
     fun render(
         code: String,
-        options: CodeRenderOptions = CodeRenderOptions()
+        options: HighlightOptions = HighlightOptions()
     ): Flow<CodeRenderState> = flow {
         emit(CodeRenderState.Pending)
         emit(renderTerminalState(code, options))
@@ -16,56 +15,42 @@ class CodeRenderer(private val bridge: PrismBridge) {
 
     private suspend fun renderTerminalState(
         code: String,
-        options: CodeRenderOptions
+        options: HighlightOptions
     ): CodeRenderState {
-        if (!options.fontSizeSp.isFinite() || options.fontSizeSp <= 0f ||
-            !options.scale.isFinite() || options.scale <= 0f
-        ) {
+        val payload = try {
+            highlighter.tokenize(code, options)
+        } catch (cancellation: CancellationException) {
+            throw cancellation
+        } catch (error: Throwable) {
             return CodeRenderState.Failed(
-                CodeRenderFallback(
-                    text = code,
-                    reason = CodeRenderFailureReason.InvalidInput
-                )
+                CodeRenderFallback(text = code, error = error.message)
             )
-        }
-
-        val payload = tokenize(code, options)
-            ?: return CodeRenderState.Failed(
-                CodeRenderFallback(
-                    text = code,
-                    reason = CodeRenderFailureReason.BridgeUnavailable
-                )
+        } ?: return CodeRenderState.Failed(
+                CodeRenderFallback(text = code)
             )
 
-        if (!payload.ok) {
-            return CodeRenderState.Failed(
-                CodeRenderFallback(
-                    text = payload.code,
-                    reason = CodeRenderFailureReason.TokenizeFailed,
-                    error = payload.error
-                )
-            )
+        val tokens = payload.tokens.toList()
+        if (payload.language.isEmpty() || !tokens.reconstruct(code)) {
+            return CodeRenderState.Failed(CodeRenderFallback(text = code))
         }
 
         return CodeRenderState.Succeeded(
             RenderedCodeBlock(
-                code = payload.code,
+                code = code,
                 language = payload.language,
-                grammarFound = payload.grammarFound,
-                tokens = payload.tokens
+                tokens = tokens
             )
         )
     }
-
-    private suspend fun tokenize(
-        code: String,
-        options: CodeRenderOptions
-    ): PrismCodePayload? = suspendCancellableCoroutine { continuation ->
-        bridge.tokenize(code, options) { payload ->
-            if (continuation.isActive) {
-                continuation.resume(payload)
-            }
-        }
-    }
 }
 
+private fun List<CodeToken>.reconstruct(code: String): Boolean {
+    var offset = 0
+    for (token in this) {
+        if (token.text.isEmpty() || !code.startsWith(token.text, startIndex = offset)) {
+            return false
+        }
+        offset += token.text.length
+    }
+    return offset == code.length
+}

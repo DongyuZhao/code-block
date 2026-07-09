@@ -1,0 +1,85 @@
+{
+  "language": "html",
+  "tokens": [
+    {
+      "text": "<",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "main",
+      "scope": "tag"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "class",
+      "scope": "attribute"
+    },
+    {
+      "text": "=\"",
+      "scope": ""
+    },
+    {
+      "text": "app",
+      "scope": "string"
+    },
+    {
+      "text": "\"",
+      "scope": ""
+    },
+    {
+      "text": ">",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "\n  ",
+      "scope": ""
+    },
+    {
+      "text": "<",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "h1",
+      "scope": "tag"
+    },
+    {
+      "text": ">",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "Hello",
+      "scope": ""
+    },
+    {
+      "text": "</",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "h1",
+      "scope": "tag"
+    },
+    {
+      "text": ">",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": "</",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "main",
+      "scope": "tag"
+    },
+    {
+      "text": ">",
+      "scope": "punctuation.bracket"
+    }
+  ]
+}

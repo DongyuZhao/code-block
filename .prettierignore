@@ -1,9 +1,26 @@
-.gradle
-.swiftpm
-build
-dist
-node_modules
-packages/prism-code-core/generated
-packages/compose-code-block/src/main/assets
-packages/swift-code-block/Sources/SwiftCodeBlock/Resources
+# Dependencies & build output
+node_modules/
+dist/
+build/
+.gradle/
+.gradle-home/
+.pnpm-store/
+.swiftpm/
 
+# Generated runtime bundles (produced by scripts/, do not hand-format)
+packages/react-code-block/src/generated/
+packages/swift-code-block/Sources/SwiftCodeBlock/Resources/Prism/
+packages/compose-code-block/src/main/assets/code-block/
+packages/shared/code-block-core/build-wasm/
+packages/shared/code-block-core/dist-wasm/
+
+# Committed test baselines (byte-exact; must not be reformatted)
+packages/shared/code-block-core/test/golden/
+packages/compose-code-block/src/test/resources/golden/
+**/__screenshots__/
+**/VisualSnapshots/
+**/screenshots/
+
+# Lockfiles
+package-lock.json
+pnpm-lock.yaml

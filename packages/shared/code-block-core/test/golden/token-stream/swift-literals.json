@@ -1,0 +1,133 @@
+{
+  "language": "swift",
+  "tokens": [
+    {
+      "text": "let",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "enabled",
+      "scope": "variable"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "=",
+      "scope": "operator"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "true",
+      "scope": "boolean"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": "let",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "matcher",
+      "scope": "variable"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "=",
+      "scope": "operator"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "/\\w+/",
+      "scope": "string.regexp"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": "values",
+      "scope": "variable"
+    },
+    {
+      "text": ".",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": "forEach",
+      "scope": "function.call"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "{",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "value",
+      "scope": "variable"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "in",
+      "scope": "keyword.operator"
+    },
+    {
+      "text": "\n    ",
+      "scope": ""
+    },
+    {
+      "text": "print",
+      "scope": "function.call"
+    },
+    {
+      "text": "(",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "value",
+      "scope": "variable"
+    },
+    {
+      "text": ")",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": "}",
+      "scope": "punctuation.bracket"
+    }
+  ]
+}

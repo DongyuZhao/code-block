@@ -1,19 +1,11 @@
 import Foundation
 
-public enum CodeRenderFailureReason: Equatable, Sendable {
-    case invalidInput
-    case bridgeUnavailable
-    case tokenizeFailed
-}
-
 public struct CodeRenderFallback: Equatable, Sendable {
     public var text: String
-    public var reason: CodeRenderFailureReason
     public var error: String?
 
-    public init(text: String, reason: CodeRenderFailureReason, error: String? = nil) {
+    public init(text: String, error: String? = nil) {
         self.text = text
-        self.reason = reason
         self.error = error
     }
 }
@@ -21,18 +13,16 @@ public struct CodeRenderFallback: Equatable, Sendable {
 public struct RenderedCodeBlock: Equatable, Sendable {
     public var code: String
     public var language: String
-    public var grammarFound: Bool
-    public var tokens: [CodeTokenRun]
+    public var tokens: [CodeToken]
 
-    public init(code: String, language: String, grammarFound: Bool, tokens: [CodeTokenRun]) {
+    public init(code: String, language: String, tokens: [CodeToken]) {
         self.code = code
         self.language = language
-        self.grammarFound = grammarFound
         self.tokens = tokens
     }
 }
 
-public enum CodeRenderState {
+public enum CodeRenderState: Equatable, Sendable {
     case pending
     case succeeded(rendered: RenderedCodeBlock)
     case failed(fallback: CodeRenderFallback)
@@ -41,19 +31,33 @@ public enum CodeRenderState {
 public enum CodeRenderer {
     public static func render(
         code: String,
-        options: CodeRenderOptions = CodeRenderOptions(),
-        bridge: PrismBridge = .shared
+        options: HighlightOptions = .init(),
+        highlighter: CodeHighlighter = .shared
     ) -> AsyncStream<CodeRenderState> {
         AsyncStream { continuation in
             continuation.yield(.pending)
 
             let task = Task {
-                let state = await terminalState(code: code, options: options, bridge: bridge)
-                guard !Task.isCancelled else {
+                defer { continuation.finish() }
+                do {
+                    let state = try await terminalState(code: code) {
+                        try await highlighter.tokenize(code, options: options)
+                    }
+                    try Task.checkCancellation()
+                    continuation.yield(state)
+                } catch is CancellationError {
                     return
+                } catch {
+                    guard !Task.isCancelled else { return }
+                    continuation.yield(
+                        .failed(
+                            fallback: .init(
+                                text: code,
+                                error: String(describing: error)
+                            )
+                        )
+                    )
                 }
-                continuation.yield(state)
-                continuation.finish()
             }
 
             continuation.onTermination = { _ in
@@ -62,43 +66,45 @@ public enum CodeRenderer {
         }
     }
 
-    private static func terminalState(
+    static func terminalState(
         code: String,
-        options: CodeRenderOptions,
-        bridge: PrismBridge
-    ) async -> CodeRenderState {
-        guard options.fontSize.isFinite, options.fontSize > 0,
-            options.scale.isFinite, options.scale > 0
-        else {
-            return .failed(
-                fallback: CodeRenderFallback(text: code, reason: .invalidInput)
+        tokenize: @Sendable () async throws -> CodeTokens
+    ) async throws -> CodeRenderState {
+        do {
+            let payload = try await tokenize()
+            try Task.checkCancellation()
+            guard
+                !payload.language.isEmpty,
+                rebuilds(payload.tokens, source: code)
+            else {
+                return .failed(
+                    fallback: CodeRenderFallback(
+                        text: code,
+                        error: "Highlighter returned an unusable token payload."
+                    )
+                )
+            }
+            return .succeeded(
+                rendered: RenderedCodeBlock(
+                    code: code,
+                    language: payload.language,
+                    tokens: payload.tokens
+                )
             )
-        }
-
-        guard let payload = await bridge.tokenize(code, options: options) else {
-            return .failed(
-                fallback: CodeRenderFallback(text: code, reason: .bridgeUnavailable)
-            )
-        }
-
-        guard payload.ok else {
+        } catch let error as CancellationError {
+            throw error
+        } catch {
             return .failed(
                 fallback: CodeRenderFallback(
-                    text: payload.code,
-                    reason: .tokenizeFailed,
-                    error: payload.error
+                    text: code,
+                    error: String(describing: error)
                 )
             )
         }
-
-        return .succeeded(
-            rendered: RenderedCodeBlock(
-                code: payload.code,
-                language: payload.language,
-                grammarFound: payload.grammarFound,
-                tokens: payload.tokens
-            )
-        )
     }
 }
 
+func rebuilds(_ tokens: [CodeToken], source: String) -> Bool {
+    tokens.allSatisfy { !$0.text.isEmpty }
+        && tokens.lazy.map { $0.text.utf8 }.joined().elementsEqual(source.utf8)
+}

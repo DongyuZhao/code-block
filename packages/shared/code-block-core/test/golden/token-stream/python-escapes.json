@@ -1,0 +1,81 @@
+{
+  "language": "python",
+  "tokens": [
+    {
+      "text": "class",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "Greeter",
+      "scope": "constructor"
+    },
+    {
+      "text": ":\n    ",
+      "scope": ""
+    },
+    {
+      "text": "def",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "message",
+      "scope": "function"
+    },
+    {
+      "text": "(",
+      "scope": ""
+    },
+    {
+      "text": "self",
+      "scope": "variable"
+    },
+    {
+      "text": ") ",
+      "scope": ""
+    },
+    {
+      "text": "->",
+      "scope": "operator"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "str",
+      "scope": "type"
+    },
+    {
+      "text": ":\n        ",
+      "scope": ""
+    },
+    {
+      "text": "return",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "\"line",
+      "scope": "string"
+    },
+    {
+      "text": "\\n",
+      "scope": "string.escape"
+    },
+    {
+      "text": "next\"",
+      "scope": "string"
+    }
+  ]
+}

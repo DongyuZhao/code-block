@@ -1,0 +1,93 @@
+{
+  "language": "jsx",
+  "tokens": [
+    {
+      "text": "const",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "view",
+      "scope": "variable"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "=",
+      "scope": "operator"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "(",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "\n  ",
+      "scope": ""
+    },
+    {
+      "text": "<",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "section",
+      "scope": "tag"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "title",
+      "scope": "attribute"
+    },
+    {
+      "text": "=",
+      "scope": "operator"
+    },
+    {
+      "text": "\"Status\"",
+      "scope": "string"
+    },
+    {
+      "text": ">",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "\n    Ready\n  ",
+      "scope": ""
+    },
+    {
+      "text": "</",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "section",
+      "scope": "tag"
+    },
+    {
+      "text": ">",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": ")",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": ";",
+      "scope": "punctuation.delimiter"
+    }
+  ]
+}

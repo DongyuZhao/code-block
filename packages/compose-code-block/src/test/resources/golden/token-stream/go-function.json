@@ -1,0 +1,85 @@
+{
+  "language": "go",
+  "tokens": [
+    {
+      "text": "package",
+      "scope": "keyword"
+    },
+    {
+      "text": " main\n",
+      "scope": ""
+    },
+    {
+      "text": "func",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "greet",
+      "scope": "variable"
+    },
+    {
+      "text": "(",
+      "scope": ""
+    },
+    {
+      "text": "name",
+      "scope": "variable"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "string",
+      "scope": "type"
+    },
+    {
+      "text": ") ",
+      "scope": ""
+    },
+    {
+      "text": "string",
+      "scope": "type"
+    },
+    {
+      "text": " {\n  ",
+      "scope": ""
+    },
+    {
+      "text": "return",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "\"Hello, \"",
+      "scope": "string"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "+",
+      "scope": "operator"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "name",
+      "scope": "variable"
+    },
+    {
+      "text": "\n}",
+      "scope": ""
+    }
+  ]
+}

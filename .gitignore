@@ -1,9 +1,15 @@
 .DS_Store
+*.hprof
 .build/
 .gradle/
 .gradle-home/
+.cxx/
+.idea/
 .pnpm-store/
 .swiftpm/
+.superpowers/
+.vitest-attachments/
+.worktrees/
 build/
 dist/
 node_modules/

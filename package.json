@@ -1,28 +1,42 @@
 {
-  "name": "code-block",
-  "private": true,
-  "type": "module",
-  "packageManager": "pnpm@11.7.0",
-  "scripts": {
-    "build:prism-code": "node scripts/build-prism-code.mjs",
-    "check:prism-code": "node scripts/build-prism-code.mjs --check",
-    "sync:prism": "node scripts/sync-prism-assets.mjs",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "test:shared": "node --test packages/prism-code-core/test/*.test.mjs",
-    "test:react": "pnpm --dir packages/react-code-block test",
-    "test:swift": "swift test --package-path packages/swift-code-block",
-    "test:android": "GRADLE_USER_HOME=.gradle-home JAVA_HOME=\"/Applications/Android Studio.app/Contents/jbr/Contents/Home\" ANDROID_HOME=\"$HOME/Library/Android/sdk\" ./gradlew :compose-code-block:testDebugUnitTest",
-    "test": "pnpm run test:shared && pnpm run test:react",
-    "test:all": "pnpm test && pnpm run test:swift && pnpm run test:android",
-    "sample:react:dev": "pnpm --dir samples/react-code-block-sample run dev",
-    "sample:react:build": "pnpm --dir samples/react-code-block-sample run build",
-    "sample:swift:generate": "xcodegen generate --spec samples/swift-code-block-sample/project.yml --project samples/swift-code-block-sample",
-    "sample:swift:build": "xcodebuild -project samples/swift-code-block-sample/SwiftCodeBlockSample.xcodeproj -scheme SwiftCodeBlockSample-iOS -destination 'generic/platform=iOS Simulator' build",
-    "sample:android:build": "GRADLE_USER_HOME=.gradle-home JAVA_HOME=\"/Applications/Android Studio.app/Contents/jbr/Contents/Home\" ANDROID_HOME=\"$HOME/Library/Android/sdk\" ./gradlew -p samples/compose-code-block-sample :app:assembleDebug"
-  },
-  "devDependencies": {
-    "prettier": "^3.9.4",
-    "typescript": "^5.5.4"
-  }
+    "name": "code-block",
+    "private": true,
+    "type": "module",
+    "packageManager": "pnpm@11.7.0",
+    "scripts": {
+        "build:queries": "node packages/shared/code-block-core/gen/gen-queries.mjs",
+        "check:queries": "node packages/shared/code-block-core/gen/gen-queries.mjs --check",
+        "build:wasm": "node packages/shared/code-block-core/gen/build-wasm.mjs",
+        "check:wasm": "node packages/shared/code-block-core/gen/build-wasm.mjs --check",
+        "build:code-block-core": "make -C packages/shared/code-block-core all",
+        "gen:goldens": "node packages/shared/code-block-core/gen/gen-goldens.mjs",
+        "gen:compose-goldens": "node scripts/gen-compose-goldens.mjs",
+        "check:compose-goldens": "node scripts/gen-compose-goldens.mjs --check",
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
+        "format:swift": "swift format --recursive --in-place Package.swift packages/swift-code-block/Sources packages/swift-code-block/Tests",
+        "format:swift:check": "swift format lint --recursive Package.swift packages/swift-code-block/Sources packages/swift-code-block/Tests",
+        "test:shared": "pnpm run check:queries && pnpm run check:compose-goldens && node --test packages/shared/code-block-core/test/*.test.mjs",
+        "test:shared:update": "pnpm run build:code-block-core && pnpm run gen:goldens",
+        "test:react": "pnpm --dir packages/react-code-block test",
+        "test:swift": "swift test --package-path . && swift build --package-path packages/swift-code-block/Tests/Consumer",
+        "test:android": "GRADLE_USER_HOME=.gradle-home JAVA_HOME=\"/Applications/Android Studio.app/Contents/jbr/Contents/Home\" ANDROID_HOME=\"$HOME/Library/Android/sdk\" ./gradlew :packages:compose-code-block:testDebugUnitTest",
+        "test": "pnpm run test:shared && pnpm run test:react",
+        "test:all": "pnpm test && pnpm run test:swift && pnpm run test:android",
+        "sample:react:dev": "pnpm --dir samples/react-code-block-sample run dev",
+        "sample:react:build": "pnpm --dir samples/react-code-block-sample run build",
+        "sample:swift:generate": "xcodegen generate --spec samples/swift-code-block-sample/project.yml --project samples/swift-code-block-sample",
+        "sample:swift:build": "xcodebuild -project samples/swift-code-block-sample/SwiftCodeBlockSample.xcodeproj -scheme SwiftCodeBlockSample-iOS -destination 'generic/platform=iOS Simulator' build",
+        "sample:android:build": "GRADLE_USER_HOME=.gradle-home JAVA_HOME=\"/Applications/Android Studio.app/Contents/jbr/Contents/Home\" ANDROID_HOME=\"$HOME/Library/Android/sdk\" ./gradlew :samples:compose-code-block-sample:assembleDebug",
+        "snapshot:react:visual": "pnpm --dir packages/react-code-block run test:pixel",
+        "snapshot:react:visual:record": "pnpm --dir packages/react-code-block run test:pixel:update",
+        "snapshot:swift:visual": "swift test --package-path . --filter CodeBlockVisualSnapshotTests",
+        "snapshot:swift:visual:record": "UPDATE_CODE_BLOCK_SNAPSHOTS=1 swift test --package-path . --filter CodeBlockVisualSnapshotTests",
+        "snapshot:android:visual": "GRADLE_USER_HOME=.gradle-home JAVA_HOME=\"/Applications/Android Studio.app/Contents/jbr/Contents/Home\" ANDROID_HOME=\"$HOME/Library/Android/sdk\" ./gradlew :packages:compose-code-block:verifyRoborazziDebug",
+        "snapshot:android:visual:record": "GRADLE_USER_HOME=.gradle-home JAVA_HOME=\"/Applications/Android Studio.app/Contents/jbr/Contents/Home\" ANDROID_HOME=\"$HOME/Library/Android/sdk\" ./gradlew :packages:compose-code-block:recordRoborazziDebug"
+    },
+    "devDependencies": {
+        "prettier": "^3.9.4",
+        "typescript": "^5.5.4"
+    }
 }

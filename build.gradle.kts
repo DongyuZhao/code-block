@@ -1,6 +1,10 @@
 plugins {
+    alias(libs.plugins.android.application) apply false
     alias(libs.plugins.android.library) apply false
     alias(libs.plugins.kotlin.compose) apply false
+    // Roborazzi drives Android pixel snapshots on the JVM (keeps AGP 9); the
+    // official Compose screenshot plugin does not support AGP 9 yet.
+    alias(libs.plugins.roborazzi) apply false
 }
 
 allprojects {
@@ -17,4 +21,3 @@ allprojects {
         }
     }
 }
-

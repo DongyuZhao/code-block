@@ -1,0 +1,89 @@
+{
+  "language": "markdown",
+  "tokens": [
+    {
+      "text": "#",
+      "scope": "punctuation.special"
+    },
+    {
+      "text": " Hello\n",
+      "scope": "markup.heading"
+    },
+    {
+      "text": "\nUse ",
+      "scope": ""
+    },
+    {
+      "text": "*",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": "emphasis",
+      "scope": "markup.emphasis"
+    },
+    {
+      "text": "*",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": ", ",
+      "scope": ""
+    },
+    {
+      "text": "**",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": "strong",
+      "scope": "markup.strong"
+    },
+    {
+      "text": "**",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": ", and ",
+      "scope": ""
+    },
+    {
+      "text": "`",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": "code",
+      "scope": "markup.raw"
+    },
+    {
+      "text": "`",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": ".\nRead the ",
+      "scope": ""
+    },
+    {
+      "text": "[",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": "docs",
+      "scope": "markup.link.label"
+    },
+    {
+      "text": "](",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": "https://example.com",
+      "scope": "markup.link.url"
+    },
+    {
+      "text": ")",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": ".",
+      "scope": ""
+    }
+  ]
+}

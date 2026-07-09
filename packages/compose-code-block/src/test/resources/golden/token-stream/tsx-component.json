@@ -1,0 +1,189 @@
+{
+  "language": "tsx",
+  "tokens": [
+    {
+      "text": "type",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "Props",
+      "scope": "type"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "=",
+      "scope": "operator"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "{",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "active",
+      "scope": "property"
+    },
+    {
+      "text": ": ",
+      "scope": ""
+    },
+    {
+      "text": "boolean",
+      "scope": "type.builtin"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "}",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": ";",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": "const",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "Badge",
+      "scope": "type"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "=",
+      "scope": "operator"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "({",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": " active ",
+      "scope": ""
+    },
+    {
+      "text": "}",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": ": ",
+      "scope": ""
+    },
+    {
+      "text": "Props",
+      "scope": "type"
+    },
+    {
+      "text": ")",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "=>",
+      "scope": "operator"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "(",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "\n  ",
+      "scope": ""
+    },
+    {
+      "text": "<",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "strong",
+      "scope": "tag"
+    },
+    {
+      "text": ">{",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "active",
+      "scope": "variable"
+    },
+    {
+      "text": " ? ",
+      "scope": ""
+    },
+    {
+      "text": "\"on\"",
+      "scope": "string"
+    },
+    {
+      "text": " : ",
+      "scope": ""
+    },
+    {
+      "text": "\"off\"",
+      "scope": "string"
+    },
+    {
+      "text": "}</",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "strong",
+      "scope": "tag"
+    },
+    {
+      "text": ">",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": ")",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": ";",
+      "scope": "punctuation.delimiter"
+    }
+  ]
+}

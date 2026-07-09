@@ -1,0 +1,89 @@
+{
+  "language": "rust",
+  "tokens": [
+    {
+      "text": "fn",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "greet",
+      "scope": "function"
+    },
+    {
+      "text": "(",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "name",
+      "scope": "variable.parameter"
+    },
+    {
+      "text": ":",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "&",
+      "scope": "operator"
+    },
+    {
+      "text": "str",
+      "scope": "type.builtin"
+    },
+    {
+      "text": ")",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": " -> ",
+      "scope": ""
+    },
+    {
+      "text": "String",
+      "scope": "type"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "{",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "\n  ",
+      "scope": ""
+    },
+    {
+      "text": "format!",
+      "scope": "function.macro"
+    },
+    {
+      "text": "(",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "\"Hello, {name}\"",
+      "scope": "string"
+    },
+    {
+      "text": ")",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": "}",
+      "scope": "punctuation.bracket"
+    }
+  ]
+}

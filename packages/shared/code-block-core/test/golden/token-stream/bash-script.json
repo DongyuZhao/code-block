@@ -1,0 +1,57 @@
+{
+  "language": "bash",
+  "tokens": [
+    {
+      "text": "#!/usr/bin/env bash",
+      "scope": "comment"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": "name",
+      "scope": "property"
+    },
+    {
+      "text": "=",
+      "scope": ""
+    },
+    {
+      "text": "\"world\"",
+      "scope": "string"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": "echo",
+      "scope": "function"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "\"Hello, ",
+      "scope": "string"
+    },
+    {
+      "text": "${",
+      "scope": "markup.embedded"
+    },
+    {
+      "text": "name",
+      "scope": "property"
+    },
+    {
+      "text": "}",
+      "scope": "markup.embedded"
+    },
+    {
+      "text": "\"",
+      "scope": "string"
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "language": "kotlin",
+  "tokens": [
+    {
+      "text": "package ",
+      "scope": "module"
+    },
+    {
+      "text": "demo",
+      "scope": "variable"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": "fun",
+      "scope": "keyword.function"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "scan",
+      "scope": "function"
+    },
+    {
+      "text": "(",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "input",
+      "scope": "variable.parameter"
+    },
+    {
+      "text": ":",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "String",
+      "scope": "type.builtin"
+    },
+    {
+      "text": ")",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": ":",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "Boolean",
+      "scope": "type.builtin"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "{",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": "loop@",
+      "scope": "label"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "for",
+      "scope": "keyword.repeat"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "(",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "ch",
+      "scope": "variable"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "in",
+      "scope": "operator"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "input",
+      "scope": "variable"
+    },
+    {
+      "text": ")",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "{",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": "if",
+      "scope": "keyword.conditional"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "(",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "ch",
+      "scope": "variable"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "==",
+      "scope": "operator"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "'x'",
+      "scope": "character"
+    },
+    {
+      "text": ")",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "return ",
+      "scope": "keyword.return"
+    },
+    {
+      "text": "Regex",
+      "scope": "function"
+    },
+    {
+      "text": "(",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "\"\\\\d+\"",
+      "scope": "string.regexp"
+    },
+    {
+      "text": ")",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": ".",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": "matches",
+      "scope": "function"
+    },
+    {
+      "text": "(",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "input",
+      "scope": "variable"
+    },
+    {
+      "text": ")",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": "}}",
+      "scope": "punctuation.bracket"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "language": "kotlin",
+  "tokens": [
+    {
+      "text": "@Composable",
+      "scope": "attribute"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": "fun",
+      "scope": "keyword.function"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "Greeting",
+      "scope": "variable"
+    },
+    {
+      "text": "(",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "name",
+      "scope": "variable.parameter"
+    },
+    {
+      "text": ":",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "String",
+      "scope": "type.builtin"
+    },
+    {
+      "text": ")",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "{",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "\n    ",
+      "scope": ""
+    },
+    {
+      "text": "Text",
+      "scope": "function"
+    },
+    {
+      "text": "(",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "\"Hello, ",
+      "scope": "string"
+    },
+    {
+      "text": "$",
+      "scope": "punctuation.special"
+    },
+    {
+      "text": "name",
+      "scope": "none"
+    },
+    {
+      "text": "\"",
+      "scope": "string"
+    },
+    {
+      "text": ")",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": "}",
+      "scope": "punctuation.bracket"
+    }
+  ]
+}

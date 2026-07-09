@@ -1,14 +1,14 @@
 {
-  "compilerOptions": {
-    "esModuleInterop": true,
-    "jsx": "react-jsx",
-    "lib": ["DOM", "ES2022"],
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "noEmit": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "target": "ES2022"
-  },
-  "include": ["src/**/*", "vite.config.ts"]
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "jsx": "react-jsx",
+        "lib": ["DOM", "ES2022"],
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "noEmit": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "target": "ES2022"
+    },
+    "include": ["src/**/*", "vite.config.ts"]
 }

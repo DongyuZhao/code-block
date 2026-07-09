@@ -1,0 +1,61 @@
+{
+  "language": "ruby",
+  "tokens": [
+    {
+      "text": "def",
+      "scope": "keyword"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "greet",
+      "scope": "function.method"
+    },
+    {
+      "text": "(",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "name",
+      "scope": "variable.parameter"
+    },
+    {
+      "text": ")",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "\n  ",
+      "scope": ""
+    },
+    {
+      "text": "\"Hello, ",
+      "scope": "string"
+    },
+    {
+      "text": "#{",
+      "scope": "punctuation.special"
+    },
+    {
+      "text": "name",
+      "scope": "function.method"
+    },
+    {
+      "text": "}",
+      "scope": "punctuation.bracket"
+    },
+    {
+      "text": "\"",
+      "scope": "string"
+    },
+    {
+      "text": "\n",
+      "scope": ""
+    },
+    {
+      "text": "end",
+      "scope": "keyword"
+    }
+  ]
+}

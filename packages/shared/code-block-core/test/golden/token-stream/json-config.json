@@ -1,0 +1,41 @@
+{
+  "language": "json",
+  "tokens": [
+    {
+      "text": "{\n  ",
+      "scope": ""
+    },
+    {
+      "text": "\"name\"",
+      "scope": "string"
+    },
+    {
+      "text": ": ",
+      "scope": ""
+    },
+    {
+      "text": "\"code-block\"",
+      "scope": "string"
+    },
+    {
+      "text": ",\n  ",
+      "scope": ""
+    },
+    {
+      "text": "\"enabled\"",
+      "scope": "string"
+    },
+    {
+      "text": ": ",
+      "scope": ""
+    },
+    {
+      "text": "true",
+      "scope": "constant.builtin"
+    },
+    {
+      "text": "\n}",
+      "scope": ""
+    }
+  ]
+}

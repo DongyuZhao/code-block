@@ -1,44 +1,29 @@
 package io.github.dongyuzhao.composecodeblock
 
-data class CodeRenderOptions(
+data class HighlightOptions(
     val language: String = "plain",
-    val fallbackLanguage: String = "plain",
-    val fontSizeSp: Float = 14f,
-    val scale: Float = 1f
+    val fallbackLanguage: String = "plain"
 )
 
-data class CodeTokenRun(
+data class CodeToken(
     val text: String,
-    val types: List<String>
+    val scope: String
 )
 
-data class PrismCodePayload(
-    val ok: Boolean,
-    val code: String,
+data class CodeTokens(
     val language: String,
-    val requestedLanguage: String,
-    val grammarFound: Boolean,
-    val tokens: List<CodeTokenRun>,
-    val error: String? = null
+    val tokens: List<CodeToken>
 )
-
-enum class CodeRenderFailureReason {
-    InvalidInput,
-    BridgeUnavailable,
-    TokenizeFailed
-}
 
 data class CodeRenderFallback(
     val text: String,
-    val reason: CodeRenderFailureReason,
     val error: String? = null
 )
 
 data class RenderedCodeBlock(
     val code: String,
     val language: String,
-    val grammarFound: Boolean,
-    val tokens: List<CodeTokenRun>
+    val tokens: List<CodeToken>
 )
 
 sealed interface CodeRenderState {
@@ -46,8 +31,3 @@ sealed interface CodeRenderState {
     data class Succeeded(val rendered: RenderedCodeBlock) : CodeRenderState
     data class Failed(val fallback: CodeRenderFallback) : CodeRenderState
 }
-
-fun interface CodeJavaScriptRuntime {
-    fun evaluate(script: String, callback: (String?) -> Unit)
-}
-

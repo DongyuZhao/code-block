@@ -1,0 +1,53 @@
+{
+  "language": "css",
+  "tokens": [
+    {
+      "text": ".",
+      "scope": ""
+    },
+    {
+      "text": "button",
+      "scope": "property"
+    },
+    {
+      "text": " {\n  ",
+      "scope": ""
+    },
+    {
+      "text": "color",
+      "scope": "property"
+    },
+    {
+      "text": ":",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": " ",
+      "scope": ""
+    },
+    {
+      "text": "#",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": "0a7",
+      "scope": "string.special"
+    },
+    {
+      "text": ";\n  ",
+      "scope": ""
+    },
+    {
+      "text": "display",
+      "scope": "property"
+    },
+    {
+      "text": ":",
+      "scope": "punctuation.delimiter"
+    },
+    {
+      "text": " grid;\n}",
+      "scope": ""
+    }
+  ]
+}

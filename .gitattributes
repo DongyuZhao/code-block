@@ -1,0 +1,3 @@
+# Vendored upstream sources are retained byte-for-byte, including upstream
+# whitespace. Do not report those bytes as repository-authored whitespace errors.
+packages/shared/code-block-core/vendor/** -whitespace

@@ -7,57 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4FF2A9A3CE643717F333EE5C /* SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BEB107195CDE086D9F0198 /* SampleApp.swift */; };
-		EE2FD8FF2191EB94BC457AD9 /* swift-code-block in Frameworks */ = {isa = PBXBuildFile; productRef = 42253910B8A75FD90F41A5AE /* swift-code-block */; };
+		E491BE516D52ABA3BE2EF03E /* swift-code-block in Frameworks */ = {isa = PBXBuildFile; productRef = 00B91C12FF311A909AC626C4 /* swift-code-block */; };
+		EECAB9A6658160E4EDF87D74 /* SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ADDB24BF01D9F28210E556 /* SampleApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6C0402354155F0B1E156B37A /* swift-code-block */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "swift-code-block"; path = "../../packages/swift-code-block"; sourceTree = SOURCE_ROOT; };
-		6E226A7BF4A2C458CE1AEA67 /* SwiftCodeBlockSample-iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "SwiftCodeBlockSample-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		89BEB107195CDE086D9F0198 /* SampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleApp.swift; sourceTree = "<group>"; };
+		35E4B6B0B9D2FB7750755332 /* code-block */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "code-block"; path = ../..; sourceTree = SOURCE_ROOT; };
+		49ADDB24BF01D9F28210E556 /* SampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleApp.swift; sourceTree = "<group>"; };
+		51161DD6A0BCD28491D6ACD4 /* SwiftCodeBlockSample-iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "SwiftCodeBlockSample-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AA061464F336AC0E81A3D5ED /* Frameworks */ = {
+		B2B77F33A86EDAB54589BC1A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE2FD8FF2191EB94BC457AD9 /* swift-code-block in Frameworks */,
+				E491BE516D52ABA3BE2EF03E /* swift-code-block in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2EEA2B94B8F3B03C2E0C0DB6 = {
+		09BA1B4F4EB9210AA9437CAF /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				610DA2DBABEC9EE315FB2766 /* Packages */,
-				E2B6953D5D9413F44BA80BE4 /* SwiftCodeBlockSample */,
-				B206C18E0E2FFB3E4B69BCE1 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		610DA2DBABEC9EE315FB2766 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				6C0402354155F0B1E156B37A /* swift-code-block */,
+				35E4B6B0B9D2FB7750755332 /* code-block */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
 		};
-		B206C18E0E2FFB3E4B69BCE1 /* Products */ = {
+		22034623DC1097F0773C73B6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6E226A7BF4A2C458CE1AEA67 /* SwiftCodeBlockSample-iOS.app */,
+				51161DD6A0BCD28491D6ACD4 /* SwiftCodeBlockSample-iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E2B6953D5D9413F44BA80BE4 /* SwiftCodeBlockSample */ = {
+		F40AF0B982050504BAD9F802 = {
 			isa = PBXGroup;
 			children = (
-				89BEB107195CDE086D9F0198 /* SampleApp.swift */,
+				09BA1B4F4EB9210AA9437CAF /* Packages */,
+				FBD0C1882352A6CF0C910444 /* SwiftCodeBlockSample */,
+				22034623DC1097F0773C73B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBD0C1882352A6CF0C910444 /* SwiftCodeBlockSample */ = {
+			isa = PBXGroup;
+			children = (
+				49ADDB24BF01D9F28210E556 /* SampleApp.swift */,
 			);
 			name = SwiftCodeBlockSample;
 			path = Sources/SwiftCodeBlockSample;
@@ -66,12 +66,12 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2F5B0F7ACEEB2DC0AE4EAD77 /* SwiftCodeBlockSample-iOS */ = {
+		17E8E45F1ACE477E69DBF756 /* SwiftCodeBlockSample-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 32C532EA54B572EFBA5192C5 /* Build configuration list for PBXNativeTarget "SwiftCodeBlockSample-iOS" */;
+			buildConfigurationList = 90E2757B73BEC041F5413B1E /* Build configuration list for PBXNativeTarget "SwiftCodeBlockSample-iOS" */;
 			buildPhases = (
-				C1EC399EE0CB922FBDC37D2F /* Sources */,
-				AA061464F336AC0E81A3D5ED /* Frameworks */,
+				3D8F52FB145420ADCAF825EF /* Sources */,
+				B2B77F33A86EDAB54589BC1A /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -79,16 +79,16 @@
 			);
 			name = "SwiftCodeBlockSample-iOS";
 			packageProductDependencies = (
-				42253910B8A75FD90F41A5AE /* swift-code-block */,
+				00B91C12FF311A909AC626C4 /* swift-code-block */,
 			);
 			productName = "SwiftCodeBlockSample-iOS";
-			productReference = 6E226A7BF4A2C458CE1AEA67 /* SwiftCodeBlockSample-iOS.app */;
+			productReference = 51161DD6A0BCD28491D6ACD4 /* SwiftCodeBlockSample-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1405B8FC4391D6077CFDA685 /* Project object */ = {
+		0A6ED6638B0ABB72A650D4F8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
@@ -96,63 +96,41 @@
 				TargetAttributes = {
 				};
 			};
-			buildConfigurationList = 1AC0D17FB8B2EACFA3EBEEC7 /* Build configuration list for PBXProject "SwiftCodeBlockSample" */;
+			buildConfigurationList = 393449BDA1D7AAC24C99668C /* Build configuration list for PBXProject "SwiftCodeBlockSample" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
 				en,
 			);
-			mainGroup = 2EEA2B94B8F3B03C2E0C0DB6;
+			mainGroup = F40AF0B982050504BAD9F802;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				768D1DD75DC23BA8BC84375B /* XCLocalSwiftPackageReference "../../packages/swift-code-block" */,
+				84C797FB74AF9FE9CDA19907 /* XCLocalSwiftPackageReference "../.." */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = B206C18E0E2FFB3E4B69BCE1 /* Products */;
+			productRefGroup = 22034623DC1097F0773C73B6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F5B0F7ACEEB2DC0AE4EAD77 /* SwiftCodeBlockSample-iOS */,
+				17E8E45F1ACE477E69DBF756 /* SwiftCodeBlockSample-iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C1EC399EE0CB922FBDC37D2F /* Sources */ = {
+		3D8F52FB145420ADCAF825EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FF2A9A3CE643717F333EE5C /* SampleApp.swift in Sources */,
+				EECAB9A6658160E4EDF87D74 /* SampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		425AB0ED62240F50153544A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.dongyuzhao.codeblock.sample.ios;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		55CFBF1EEA5F7DABB647CA29 /* Release */ = {
+		512F7C1FC9B5F6D42CDDE142 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -208,29 +186,7 @@
 			};
 			name = Release;
 		};
-		C55EA1ECA79F555689197305 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.dongyuzhao.codeblock.sample.ios;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		DD497640159489693F18233D /* Debug */ = {
+		596C1C2B85CF1674C27ABB7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -293,23 +249,67 @@
 			};
 			name = Debug;
 		};
+		E24BF6A41D52B5257C18E2AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.dongyuzhao.codeblock.sample.ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCF91FD3F30C105DF715830E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.dongyuzhao.codeblock.sample.ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1AC0D17FB8B2EACFA3EBEEC7 /* Build configuration list for PBXProject "SwiftCodeBlockSample" */ = {
+		393449BDA1D7AAC24C99668C /* Build configuration list for PBXProject "SwiftCodeBlockSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD497640159489693F18233D /* Debug */,
-				55CFBF1EEA5F7DABB647CA29 /* Release */,
+				596C1C2B85CF1674C27ABB7E /* Debug */,
+				512F7C1FC9B5F6D42CDDE142 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		32C532EA54B572EFBA5192C5 /* Build configuration list for PBXNativeTarget "SwiftCodeBlockSample-iOS" */ = {
+		90E2757B73BEC041F5413B1E /* Build configuration list for PBXNativeTarget "SwiftCodeBlockSample-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C55EA1ECA79F555689197305 /* Debug */,
-				425AB0ED62240F50153544A5 /* Release */,
+				E24BF6A41D52B5257C18E2AC /* Debug */,
+				FCF91FD3F30C105DF715830E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -317,18 +317,18 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		768D1DD75DC23BA8BC84375B /* XCLocalSwiftPackageReference "../../packages/swift-code-block" */ = {
+		84C797FB74AF9FE9CDA19907 /* XCLocalSwiftPackageReference "../.." */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = "../../packages/swift-code-block";
+			relativePath = ../..;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		42253910B8A75FD90F41A5AE /* swift-code-block */ = {
+		00B91C12FF311A909AC626C4 /* swift-code-block */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = "swift-code-block";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 1405B8FC4391D6077CFDA685 /* Project object */;
+	rootObject = 0A6ED6638B0ABB72A650D4F8 /* Project object */;
 }
