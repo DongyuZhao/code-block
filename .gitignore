@@ -1,0 +1,11 @@
+.DS_Store
+.build/
+.gradle/
+.gradle-home/
+.pnpm-store/
+.swiftpm/
+build/
+dist/
+node_modules/
+package-lock.json
+local.properties

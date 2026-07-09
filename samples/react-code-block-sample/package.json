@@ -1,0 +1,25 @@
+{
+  "name": "react-code-block-sample",
+  "version": "0.1.0",
+  "description": "Sample app for react-code-block",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "pnpm --dir ../../packages/react-code-block run build",
+    "dev": "vite",
+    "prebuild": "pnpm --dir ../../packages/react-code-block run build",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-code-block": "file:../../packages/react-code-block",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.7",
+    "typescript": "^5.5.4",
+    "vite": "^7.2.7"
+  }
+}

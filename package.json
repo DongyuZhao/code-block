@@ -1,0 +1,28 @@
+{
+  "name": "code-block",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.7.0",
+  "scripts": {
+    "build:prism-code": "node scripts/build-prism-code.mjs",
+    "check:prism-code": "node scripts/build-prism-code.mjs --check",
+    "sync:prism": "node scripts/sync-prism-assets.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test:shared": "node --test packages/prism-code-core/test/*.test.mjs",
+    "test:react": "pnpm --dir packages/react-code-block test",
+    "test:swift": "swift test --package-path packages/swift-code-block",
+    "test:android": "GRADLE_USER_HOME=.gradle-home JAVA_HOME=\"/Applications/Android Studio.app/Contents/jbr/Contents/Home\" ANDROID_HOME=\"$HOME/Library/Android/sdk\" ./gradlew :compose-code-block:testDebugUnitTest",
+    "test": "pnpm run test:shared && pnpm run test:react",
+    "test:all": "pnpm test && pnpm run test:swift && pnpm run test:android",
+    "sample:react:dev": "pnpm --dir samples/react-code-block-sample run dev",
+    "sample:react:build": "pnpm --dir samples/react-code-block-sample run build",
+    "sample:swift:generate": "xcodegen generate --spec samples/swift-code-block-sample/project.yml --project samples/swift-code-block-sample",
+    "sample:swift:build": "xcodebuild -project samples/swift-code-block-sample/SwiftCodeBlockSample.xcodeproj -scheme SwiftCodeBlockSample-iOS -destination 'generic/platform=iOS Simulator' build",
+    "sample:android:build": "GRADLE_USER_HOME=.gradle-home JAVA_HOME=\"/Applications/Android Studio.app/Contents/jbr/Contents/Home\" ANDROID_HOME=\"$HOME/Library/Android/sdk\" ./gradlew -p samples/compose-code-block-sample :app:assembleDebug"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.4",
+    "typescript": "^5.5.4"
+  }
+}

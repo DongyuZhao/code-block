@@ -1,0 +1,9 @@
+.gradle
+.swiftpm
+build
+dist
+node_modules
+packages/prism-code-core/generated
+packages/compose-code-block/src/main/assets
+packages/swift-code-block/Sources/SwiftCodeBlock/Resources
+

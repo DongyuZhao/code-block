@@ -1,0 +1,26 @@
+[versions]
+agp = "9.2.1"
+compose-bom = "2026.06.01"
+foojay-resolver = "1.0.0"
+jdk = "17"
+json = "20260522"
+junit = "4.13.2"
+kotlin = "2.4.0"
+kotlinx-coroutines = "1.11.0"
+
+[libraries]
+androidx-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "compose-bom" }
+androidx-compose-foundation = { module = "androidx.compose.foundation:foundation" }
+androidx-compose-material3 = { module = "androidx.compose.material3:material3" }
+androidx-compose-ui = { module = "androidx.compose.ui:ui" }
+androidx-compose-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
+androidx-compose-ui-text = { module = "androidx.compose.ui:ui-text" }
+androidx-compose-ui-unit = { module = "androidx.compose.ui:ui-unit" }
+json = { module = "org.json:json", version.ref = "json" }
+junit = { module = "junit:junit", version.ref = "junit" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+
+[plugins]
+android-library = { id = "com.android.library", version.ref = "agp" }
+foojay-resolver = { id = "org.gradle.toolchains.foojay-resolver-convention", version.ref = "foojay-resolver" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
